@@ -19,7 +19,7 @@ var guessesLeft = 12;
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event) {
     userGuess = event.key.toLowerCase();
-    if(userGuess.match(/[a-z]/) && userGuess !== "capslock"){
+    if(userGuess.match(/[a-z]/) && userGuess !== "capslock" && userGuess !== "enter"){
         var guessText = userGuess;
     // Determines which key was pressed.
 
